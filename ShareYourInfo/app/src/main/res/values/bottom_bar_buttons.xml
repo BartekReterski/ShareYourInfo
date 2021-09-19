@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="bottom_bar_icons">
+        <item>@drawable/ic_baseline_save_24</item>
+        <item>@drawable/ic_baseline_add_24</item>
+        <item>@drawable/ic_baseline_share_24</item>
+    </array>
+
+    <array name="bottom_bar_colors">
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+        <item>#FFFFFF</item>
+    </array>
+
+
+</resources>
