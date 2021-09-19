@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             app:buttonColors="@array/bottom_bar_colors"
             app:buttonIcons="@array/bottom_bar_icons"
-            app:iconsColor="@color/teal_700"
+            app:iconsColor="#005b9f"
             app:showSelectAnimation="false"
             app:layout_anchor="@id/bottom_app_bar"
             app:maxAngle="180"
