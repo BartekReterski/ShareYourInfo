@@ -11,6 +11,8 @@
         android:theme="@style/Theme.ShareYourInfo">
         <activity
             android:name=".activities.AddNewInfoActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activities.MainActivity"
             android:exported="true" />
         <activity
             android:name=".activities.MainActivity"

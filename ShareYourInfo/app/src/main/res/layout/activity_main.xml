@@ -4,20 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#EEEEEE"
     tools:context=".activities.MainActivity">
 
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBaseline_toBottomOf="@id/coordinatorLayout"
+        />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottom_app_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-
             app:backgroundTint="?colorPrimary"
             app:fabAlignmentMode="center" />
 
@@ -27,10 +37,10 @@
             android:layout_height="wrap_content"
             app:buttonColors="@array/bottom_bar_colors"
             app:buttonIcons="@array/bottom_bar_icons"
-            app:iconsColor="#005b9f"
-            app:showSelectAnimation="false"
+            app:iconsColor="@color/black"
             app:layout_anchor="@id/bottom_app_bar"
             app:maxAngle="180"
+            app:showSelectAnimation="false"
             app:startAngle="-150" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,8 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.ShareYourInfo" parent="Theme.MaterialComponents.Bridge">
-        <item name="colorPrimary">#0288d1</item>
-        <item name="colorPrimaryDark">#005b9f</item>
-        <item name="colorAccent">#5eb8ff</item>
+    <style name="Theme.ShareYourInfo" parent="Theme.MaterialComponents.DayNight.Bridge">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorPrimary">#66bb6a</item>
+        <item name="colorPrimaryDark">#338a3e</item>
+        <item name="colorAccent">#98ee99</item>
     </style>
 </resources>
