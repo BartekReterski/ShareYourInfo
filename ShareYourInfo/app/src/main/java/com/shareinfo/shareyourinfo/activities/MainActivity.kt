@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     private fun mainLogic(){
 
         try {
-            val fabCircleMenu = findViewById<CircleMenu>(R.id.fabMenu)
+            val fabCircleMenu = findViewById<CircleMenu>(R.id.fab)
             fabCircleMenu.setOnItemClickListener { menuButton ->
                 when (menuButton) {
 

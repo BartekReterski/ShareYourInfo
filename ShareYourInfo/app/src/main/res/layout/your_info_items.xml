@@ -30,18 +30,19 @@
                 android:id="@+id/textViewSocialMediaName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@id/textViewSocialMediaNameValue"
                 android:layout_marginStart="@dimen/_3sdp"
                 android:text="social_media_name"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                android:textColor="#000000" />
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
             <TextView
                 android:id="@+id/textViewSocialMediaNameValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewSocialMediaName"
                 android:layout_marginStart="@dimen/_3sdp"
                 android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/_13sdp"
                 android:text="social_media_name_value"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#000000" />
@@ -59,7 +60,7 @@
                 android:id="@+id/linearLayoutChosenColor"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_8sdp"
-                android:layout_below="@id/textViewSocialMediaNameValue"
+                android:layout_below="@id/textViewSocialMediaName"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/rounded_background"
                 android:backgroundTint="@color/purple_200"
