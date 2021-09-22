@@ -25,6 +25,7 @@ import android.R.attr.button
 import android.content.Intent
 
 import androidx.core.graphics.drawable.DrawableCompat
+import com.shareinfo.shareyourinfo.activities.MainActivity
 import com.shareinfo.shareyourinfo.models.NewInfoModel
 import io.realm.Realm
 import io.realm.RealmConfiguration
@@ -108,7 +109,7 @@ class AddNewInfoActivity : AppCompatActivity() {
                     Toast.makeText(this, "Info added ", Toast.LENGTH_LONG).show()
 
                     //przekierowanie do głównej aktywności po udanym procesie dodania rekordu do bazy danych
-                    val intentFinishActivity= Intent(this,MainActivity::class.java)
+                    val intentFinishActivity= Intent(this, MainActivity::class.java)
                     intentFinishActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP and Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intentFinishActivity)
                     finish()
